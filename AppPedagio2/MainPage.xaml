@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppPedagio2.MainPage"
-             Title="Pedagio">
+             Title="Viagem">
 
     <ContentPage.Resources>
         <Style TargetType="Label">
@@ -12,36 +12,32 @@
     </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Listar Pedagios" Clicked="ToolbarItem_Clicked_Listar"/>
-        <ToolbarItem Text="Adicionar Pedagio" Clicked="ToolbarItem_Clicked_Add"/>
-        <ToolbarItem Text="Calcular Pedagio" Clicked="ToolbarItem_Clicked_Calcular"/>
+        <ToolbarItem Text="Listar Viagens" Clicked="ToolbarItem_Clicked_2"/>
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
         <VerticalStackLayout>
-            <SearchBar x:Name="txt_search" 
-                       Margin="-10,0,0,0" 
-                       Placeholder="Busca de Pedagios" 
-                       TextChanged="txt_search_TextChanged"/>
+            <Label Text="Origem"/>
+            <Entry x:Name="txt_origem"/>
 
-            <RefreshView x:Name="ref_carregando" 
-                         IsRefreshing="False" 
-                         Refreshing="ref_carregando_Refreshing"/>
+            <Label Text="Destino"/>
+            <Entry x:Name="txt_destino"/>
 
-            <ListView x:Name="lst_Pedagio"
-                      ItemSelected="lst_Pedagio_ItemSelected">
-                
-                <ListView.Header>
-                    <Grid ColumnDefinitions="5*,*,*,*,*">
-                        <Label Grid.Column="1" Text="Origem"/>
-                        <Label Grid.Column="2" Text="Origem"/>
-                        <Label Grid.Column="3" Text="Origem"/>
-                        <Label Grid.Column="4" Text="Origem"/>
-                        <Label Grid.Column="5" Text="Origem"/>
-                    </Grid>
-                </ListView.Header>
-                
-            </ListView>
+            <Label Text="Distancia"/>
+            <Entry x:Name="txt_distancia"/>
+
+            <Label Text="Rendimento"/>
+            <Entry x:Name="txt_rendimento"/>
+
+            <Label Text="Preco"/>
+            <Entry x:Name="txt_preco"/>
+
+            <Grid RowDefinitions="*" ColumnDefinitions="*, *" ColumnSpacing="5" Padding="5">
+                <Button Grid.Row="0" Grid.Column="0" Text="Adicionar Pedagio" Clicked="Button_Clicked_1"/>
+
+                <Button Grid.Row="0" Grid.Column="1" Text="Calcular" Clicked="Button_Clicked"/>
+            </Grid>
+
         </VerticalStackLayout>
     </ContentPage.Content>
 
