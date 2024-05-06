@@ -11,10 +11,6 @@
         </Style>
     </ContentPage.Resources>
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Listar Viagens" Clicked="ToolbarItem_Clicked_2"/>
-    </ContentPage.ToolbarItems>
-
     <ContentPage.Content>
         <VerticalStackLayout>
             <Label Text="Origem"/>

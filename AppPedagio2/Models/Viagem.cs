@@ -2,7 +2,7 @@
 
 namespace AppPedagio2.Models
 {
-    internal class Viagem
+    public class Viagem
     {
         [PrimaryKey, AutoIncrement]
 
