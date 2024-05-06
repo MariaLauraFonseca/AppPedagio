@@ -8,17 +8,6 @@
             InitializeComponent();
         }
 
-
-        private void ToolbarItem_Clicked_Somar(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ToolbarItem_Clicked_Add(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_search_TextChanged(object sender, TextChangedEventArgs e)
         {
 
@@ -30,11 +19,6 @@
         }
 
         private void ToolbarItem_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lst_Pedagio_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
 
         }
